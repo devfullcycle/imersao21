@@ -23,7 +23,21 @@ Se você estiver no Windows, use o WSL 2. Veja nosso tutorial [https://github.co
 
 ## Rodar a aplicação
 
-Ao final das aulas teremos todo o projeto, no momento estamos na aula 02 do Next.js, então, acesse as pastas **nestjs-api** e **next-frontend** e siga as instruções.
+Esta configuração permite rodar todas as aplicações de uma vez só, por isso não é necessário rodar o comando `docker-compose up` em cada diretório.
+> Aviso: Esta configuração costuma consumir muita memória RAM, então tenha pelo menos 8GB livre para rodar todos os containers. Você pode rodar cada aplicação separadamente usando Docker apenas quando necessário, veja o branch **main**.
+
+Rode o comando para levantar os containers:
+
+```bash
+docker compose up
+```
+
+Entre em cada **README.md** dos projetos para rodar os projetos. A ordem de execução é:
+
+2. [Golang](./go/README.md)
+1. [Nest.js](./nestjs-api/README.md)
+3. [Next.js](./next-frontend/README.md)
+
 
 ## Links e material adicional
 

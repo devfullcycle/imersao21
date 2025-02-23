@@ -11,7 +11,7 @@ import { AssetPrice } from "./AssetPrice";
 import { AssetsSync } from "../../../components/AssetsSync";
 
 export async function getAsset(symbol: string): Promise<Asset> {
-  const response = await fetch(`http://localhost:3000/assets/${symbol}`);
+  const response = await fetch(`http://host.docker.internal:3000/assets/${symbol}`);
   return response.json();
 }
 

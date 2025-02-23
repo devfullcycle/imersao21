@@ -11,7 +11,7 @@ import { Wallet } from "../models";
 import Link from "next/link";
 
 export async function getWallets(): Promise<Wallet[]> {
-  const response = await fetch(`http://localhost:3000/wallets`);
+  const response = await fetch(`http://host.docker.internal:3000/wallets`);
 
   return response.json();
 }

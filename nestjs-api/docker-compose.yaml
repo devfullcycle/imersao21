@@ -1,4 +1,16 @@
+include:
+  - ../kafka/docker-compose.yaml
+
 services:
+  nest:
+    build: .
+    volumes:
+      - .:/home/node/app
+    ports:
+      - 3000:3000
+    extra_hosts:
+      - host.docker.internal:host-gateway
+
   mongo:
     build: ./.docker/mongodb
     environment:

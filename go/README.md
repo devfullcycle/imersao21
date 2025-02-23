@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Repositório do Next.js (front-end do home broker)
+Repositório do Golang (simulador de bolsa de valores).
 
 ## Requerimentos
 
@@ -25,16 +25,24 @@ Em todos os sistemas operacionais é necessário abrir o programa para editar o 
 
 Obs.: Se estiver usando o Docker Desktop, pode ser que o `host.docker.internal` já esteja configurado, então remova a linha do arquivo hosts e acrescente a recomendada acima.
 
+
 ## Rodar a aplicação
 
 Esta configuração permite rodar todas as aplicações de uma vez só, por isso não é necessário rodar o comando `docker-compose up` em cada diretório.
 
-Da raiz do projeto rode o comando para levantar o servidor http:
+Da raiz do projeto rode o comando:
 
 ```bash
-docker compose exec next bash
-npm install
-npm run dev
+docker-compose exec golang sh
+go run cmd/trade/main.go
 ```
 
-É necessário ter o Nest.js funcionando antes para rodar o front-end.
+Isto irá rodar o simulador de bolsa de valores que já estará conectado com o Kafka.
+
+Se quiser rodar apenas o simulador de bolsa de valores, rode o comando na pasta **go**:
+
+```bash
+docker-compose up
+go run cmd/trade/main.go
+```
+
