@@ -16,7 +16,7 @@ export default function Navbar() {
   const wallet_id = searchParams.get("wallet_id");
   return (
     <FlowbiteNavbar fluid rounded>
-      <NavbarBrand href="https://flowbite-react.com">
+      <NavbarBrand href="/">
         <Image
           className="mr-3"
           alt="Full Cycle Invest"
