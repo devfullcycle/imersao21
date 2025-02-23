@@ -22,4 +22,4 @@ Rode o servidor:
 npm run dev
 ```
 
-Tenho o Nest.js funcionando antes para rodar o front-end.
+É necessário ter o Nest.js funcionando antes para rodar o front-end.
