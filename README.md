@@ -23,7 +23,15 @@ Se você estiver no Windows, use o WSL 2. Veja nosso tutorial [https://github.co
 
 ## Rodar a aplicação
 
-Ao final das aulas teremos todo o projeto, no momento estamos na aula 02 do Next.js, então, acesse as pastas **nestjs-api** e **next-frontend** e siga as instruções.
+Para rodar os projetos entre em cada pasta e siga as intruções.
+
+Existe uma configuração para rodar todos os projetos em containers Docker, veja o branch **all-in-docker**.
+
+Entre em cada **README.md** dos projetos para rodar os projetos. A ordem de execução é:
+
+2. [Golang](./go/README.md)
+1. [Nest.js](./nestjs-api/README.md)
+3. [Next.js](./next-frontend/README.md)
 
 ## Links e material adicional
 
